@@ -22,15 +22,25 @@ const game = () => {
     compChoice = computerOptions[randomNum];
   }
   function playerChoice() {
+    const playerOptions = [rockBtn,paperBtn,scissorBtn];
+    if //rockbutton = true
+      document.getElementById('player').style.backgroundImage = 'url(img/rock.jpg)';
+  }
 
-  }
-  function throwRock() {
-    
-  }
-  function throwPaper() {
-
-  }
-  function throwScissor() {
-
-  }
+function game() {
+  if (playerChoice === computerChoice)
+  document.getElementById("result").textContent="It's a Tie!";
 }
+else if (playerChoice == rockBtn && computerChoice == scissorBtn){
+  document.getElementById("result").textContent="Player Wins!";
+}
+else if (playerChoice == paperBtn && computerChoice == rockBtn){
+  document.getElementById("result").textContent="Player Wins!";
+}
+else if (playerChoice == scissorBtn && computerChoice == paperBtn){
+  document.getElementById("result").textContent="Player Wins!";
+} else {
+  document.getElementById("result").textContent="Computer Wins!";
+}
+}
+playGame();

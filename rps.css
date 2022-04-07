@@ -5,5 +5,15 @@ body {
   text-align: center;
 }
 button {
-  
+
+}
+#computer {
+  background-image: url('img/defaultCC.jpg');
+  border-width: 2px;
+  border-color: black;
+}
+#player {
+  background-image: url('img/defaultPC.jpg');
+  border-width: 2px;
+  border-color: black;
 }
