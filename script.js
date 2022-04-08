@@ -1,13 +1,13 @@
 //complete game function
-const game = () => {
+
   let playerScore = 0;
   let computerScore = 0;
 // function to grab user inputadn run function to evaluate choices
-  const playGame = () => {
-    const rockBtn = document.querySelector('.rock');
-    const paperBtn = document.querySelector('.paper');
-    const scissorBtn = document.querySelector('.scissor');
-  }
+
+  const rockBtn = document.querySelector('.rock');
+  const paperBtn = document.querySelector('.paper');
+  const scissorBtn = document.querySelector('.scissor');
+
   let pScoreboard = document.querySelector('.p-count');
   let cScoreboard = document.querySelector('.c-count');
   let roundResult = document.querySelector('.result');
@@ -22,9 +22,12 @@ const game = () => {
     compChoice = computerOptions[randomNum];
   }
   function playerChoice() {
-    const playerOptions = [rockBtn,paperBtn,scissorBtn];
-    if //rockbutton = true
+    const playerOptions = ['rock','paper','scissor'];
+    if (rockBtn) {
       document.getElementById('player').style.backgroundImage = 'url(img/rock.jpg)';
+      playerScore ++;
+      playerChoice = 'rock';
+    }
   }
 
 function game() {

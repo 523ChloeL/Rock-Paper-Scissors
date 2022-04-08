@@ -5,7 +5,9 @@ body {
   text-align: center;
 }
 button {
-
+  font-family: 'Press Start 2P';
+  color: #20C20E;
+  background-color: black;
 }
 #computer {
   background-image: url('img/defaultCC.jpg');
