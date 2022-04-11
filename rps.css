@@ -1,5 +1,6 @@
 body {
   font-family: 'Press Start 2P';
+
   color: #20C20E;
   background-image:url(img/hacker-bg.gif);
   text-align: center;
@@ -8,14 +9,23 @@ button {
   font-family: 'Press Start 2P';
   color: #20C20E;
   background-color: black;
+  padding: 5px;
+  background-image: url(img/keycap.png);
+}
+.score {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  row-gap: 1ch;
+  flex-wrap: wrap;
 }
 #computer {
-  background-image: url('img/defaultCC.jpg');
+  background-image: url(img/defaultCC.jpg);
   border-width: 2px;
   border-color: black;
 }
 #player {
-  background-image: url('img/defaultPC.jpg');
+  background-image: url(img/defaultPC.jpg);
   border-width: 2px;
   border-color: black;
 }
