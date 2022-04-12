@@ -45,10 +45,13 @@
       <button class="scissor" onclick="scissor()">Scissors</button>
     </div>
     <!-- show results of round -->
-    <div class="result" onclick="resetScore()">Who Will Win?</div>
+    <div class="result">Who Will Win?</div>
     <!-- reset game -->
-    <button class="reset">Reset</button>
+    <button class="reset" onclick="resetScore()">Reset</button>
   </section>
   <script src="script.js" ></script>
+  <script>
+    document.querySelector('.result').innerHTML = 'Who Will Win?';
+  </script>
 </body>
 </html>

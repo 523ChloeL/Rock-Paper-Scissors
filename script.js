@@ -65,10 +65,9 @@ function playGame() {
 }
 
 function resetScore() {
-  compScore = 0;
-  playerScore = 0;
-  cScoreboard.innerHTML = compScore;
-  pScoreboard.innerHTML = playerScore;
+  cScoreboard.innerHTML = "0";
+  pScoreboard.innerHTML = "0";
+  roundResult.innerHTML = "Who Will Win?";
 }
 
 function game() {
