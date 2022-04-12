@@ -73,7 +73,7 @@ function resetScore() {
 
 function game() {
   if (playerChoice === compChoice) {
-    document.getElementById("result").textContent = "It's a Tie!";
+    roundResult.innerHTML = "Tie!";
 } else if (playerChoice === "rock" && compChoice === "scissor") {
   pWin();
 } else if (playerChoice === "paper" && compChoice === "rock") {
